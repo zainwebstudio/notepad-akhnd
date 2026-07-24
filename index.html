@@ -4,344 +4,1125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uzairr — Brand & Type Designer</title>
+    <title>Local Notepad</title>
+    <link rel="icon" type="image/png"
+        href="data:image/png;base64,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">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- html2canvas for PNG Screenshot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <!-- jspdf for PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --border-color: #d5d5d5;
+            --menu-shadow: 0 8px 20px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.05);
+            --primary-blue: #0078d4;
+        }
 
-    <link rel="stylesheet" href="styles.css">
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* --- BRAND HEADER --- */
+        .brand-header {
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .brand-header .brand-text {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 800;
+            font-size: 18px;
+            letter-spacing: -0.5px;
+            color: #1a1a2e;
+        }
+
+        .brand-header .brand-text .brand-accent {
+            color: var(--primary-blue);
+        }
+
+        body.dark-mode .brand-header {
+            background-color: #252526;
+            border-color: #3e3e42;
+        }
+
+        body.dark-mode .brand-header .brand-text {
+            color: #d4d4d4;
+        }
+
+        /* --- FOOTER --- */
+        .app-footer {
+            background-color: #ffffff;
+            border-top: 1px solid var(--border-color);
+            padding: 6px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .app-footer a {
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        .app-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .app-footer .footer-sep {
+            margin: 0 6px;
+            color: #ccc;
+        }
+
+        body.dark-mode .app-footer {
+            background-color: #252526;
+            border-color: #3e3e42;
+            color: #aaa;
+        }
+
+        body.dark-mode .app-footer .footer-sep {
+            color: #555;
+        }
+
+        /* --- MENU BAR --- */
+        .menu-bar {
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            padding: 4px 12px;
+            display: flex;
+            gap: 2px;
+            user-select: none;
+            min-height: 32px;
+            align-items: center;
+            position: relative;
+            z-index: 100;
+        }
+
+        .menu-item {
+            cursor: pointer;
+            padding: 5px 12px;
+            font-size: 13px;
+            border-radius: 4px;
+            color: #1a1a1a;
+            transition: 0.1s;
+            position: relative;
+        }
+
+        .menu-item:hover {
+            background-color: #f0f0f0;
+        }
+
+        .menu-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .menu-dropdown::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 12px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 230px;
+            box-shadow: var(--menu-shadow);
+            z-index: 1000;
+            border: 1px solid #eaeaea;
+            top: 100%;
+            left: -4px;
+            border-radius: 8px;
+            padding: 6px 0;
+            margin-top: 8px;
+        }
+
+        .menu-dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content div {
+            color: #1a1a1a;
+            padding: 8px 18px;
+            font-size: 13px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dropdown-content div:hover {
+            background-color: #f2f2f2;
+        }
+
+        .dropdown-content hr {
+            margin: 4px 8px;
+            border: 0;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .shortcut {
+            color: #999;
+            font-size: 11px;
+            margin-left: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        /* --- SUBMENU --- */
+        .submenu {
+            position: relative;
+        }
+
+        .submenu-content {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: -6px;
+            background-color: #ffffff;
+            box-shadow: var(--menu-shadow);
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            padding: 6px 0;
+            display: none;
+            flex-direction: row;
+            white-space: nowrap;
+            min-width: 100px;
+        }
+
+        .submenu::after {
+            content: "";
+            position: absolute;
+            right: -10px;
+            top: 0;
+            width: 10px;
+            height: 100%;
+        }
+
+        .submenu:hover .submenu-content {
+            display: flex;
+        }
+
+        .submenu-content div {
+            justify-content: center;
+            border-right: 1px solid #f0f0f0;
+            padding: 10px 15px;
+            text-align: center;
+            margin: 0;
+            border-radius: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .submenu-content div:last-child {
+            border-right: none;
+        }
+
+        .submenu-content div:hover {
+            background-color: #f2f2f2;
+        }
+
+        /* --- TOOLBAR --- */
+        .toolbar {
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            padding: 4px 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tool-group {
+            display: flex;
+            gap: 4px;
+            padding-right: 10px;
+            border-right: 1px solid #e8e8e8;
+        }
+
+        .tool-group:last-child {
+            border-right: none;
+        }
+
+        .tool-btn {
+            background: transparent;
+            border: 1px solid transparent;
+            padding: 5px 8px;
+            cursor: pointer;
+            font-size: 15px;
+            color: #444;
+            border-radius: 4px;
+            position: relative;
+            transition: 0.1s;
+        }
+
+        .tool-btn:hover {
+            background-color: #f0f0f0;
+            border-color: #ddd;
+        }
+
+        .tool-btn.active-btn {
+            background-color: #e8e8e8;
+            border: 1px solid #ccc;
+        }
+
+        .tool-btn:hover::after {
+            content: attr(title);
+            position: absolute;
+            bottom: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #222;
+            color: #fff;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+
+        select {
+            padding: 3px 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 13px;
+            cursor: pointer;
+            background-color: #fff;
+            height: 28px;
+            color: #333;
+        }
+
+        select:hover {
+            border-color: #888;
+        }
+
+        input[type="color"] {
+            padding: 1px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            height: 26px;
+            width: 30px;
+            background: #fff;
+        }
+
+        /* --- EDITOR --- */
+        #notepad-area {
+            flex-grow: 1;
+            width: 100%;
+            padding: 20px;
+            font-size: 16px;
+            outline: none;
+            box-sizing: border-box;
+            line-height: 1.6;
+            overflow-y: auto;
+            font-family: 'Segoe UI', sans-serif;
+            color: #111;
+            background-color: #ffffff;
+        }
+
+        #notepad-area:empty::before {
+            content: "Start typing here...";
+            color: #aaa;
+        }
+
+        /* --- DARK THEME --- */
+        body.dark-mode {
+            background-color: #1e1e1e;
+        }
+
+        body.dark-mode .menu-bar,
+        body.dark-mode .toolbar {
+            background-color: #252526;
+            border-color: #3e3e42;
+        }
+
+        body.dark-mode .menu-item,
+        body.dark-mode .dropdown-content div,
+        body.dark-mode .tool-btn,
+        body.dark-mode select {
+            color: #d4d4d4;
+        }
+
+        body.dark-mode .menu-item:hover,
+        body.dark-mode .dropdown-content div:hover,
+        body.dark-mode .tool-btn:hover {
+            background-color: #3e3e42;
+        }
+
+        body.dark-mode .tool-btn.active-btn {
+            background-color: #3e3e42;
+            border-color: #5a5a5e;
+        }
+
+        body.dark-mode .tool-group {
+            border-right-color: #3e3e42;
+        }
+
+        body.dark-mode .dropdown-content {
+            background-color: #252526;
+            border-color: #3e3e42;
+        }
+
+        body.dark-mode .submenu-content {
+            background-color: #252526;
+            border-color: #3e3e42;
+        }
+
+        body.dark-mode .submenu-content div {
+            border-right-color: #3e3e42;
+        }
+
+        body.dark-mode .shortcut {
+            color: #888;
+        }
+
+        body.dark-mode #notepad-area {
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+        }
+
+        body.dark-mode select {
+            background-color: #3c3c3c;
+            border-color: #3e3e42;
+        }
+
+        body.dark-mode input[type="color"] {
+            background-color: #3c3c3c;
+            border-color: #3e3e42;
+        }
+
+        body.dark-mode .modal-box,
+        body.dark-mode .modal-box-char {
+            background-color: #252526;
+        }
+
+        body.dark-mode .modal-header,
+        body.dark-mode .modal-footer,
+        body.dark-mode .modal-footer-char {
+            background-color: #2d2d2d;
+            border-color: #3e3e42;
+        }
+
+        body.dark-mode .modal-header h3 {
+            color: #d4d4d4;
+        }
+
+        body.dark-mode .modal-close {
+            color: #d4d4d4;
+        }
+
+        body.dark-mode .modal-row label {
+            color: #d4d4d4;
+        }
+
+        body.dark-mode .modal-row input[type="text"] {
+            background-color: #3c3c3c;
+            border-color: #3e3e42;
+            color: #d4d4d4;
+        }
+
+        body.dark-mode .modal-btn {
+            background-color: #3c3c3c;
+            border-color: #3e3e42;
+            color: #d4d4d4;
+        }
+
+        body.dark-mode .char-grid-container {
+            border-color: #3e3e42;
+        }
+
+        body.dark-mode .char-cell {
+            background-color: #3c3c3c;
+            color: #d4d4d4;
+        }
+
+        body.dark-mode .char-cell:hover {
+            background-color: #094771;
+            border-color: var(--primary-blue);
+        }
+
+        body.dark-mode .char-preview-char {
+            color: #d4d4d4;
+        }
+
+        body.dark-mode .char-preview-name {
+            color: #aaa;
+        }
+
+        /* Theme Toggle Button */
+        #themeToggle {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            color: #444;
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        #themeToggle:hover {
+            background-color: #f0f0f0;
+        }
+
+        body.dark-mode #themeToggle {
+            color: #d4d4d4;
+        }
+
+        body.dark-mode #themeToggle:hover {
+            background-color: #3e3e42;
+        }
+
+        /* --- MODALS --- */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(2px);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-box-char {
+            background: #fff;
+            width: 580px;
+            max-width: 95%;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .modal-header {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fafafa;
+        }
+
+        .modal-header h3 {
+            margin: 0;
+            font-size: 17px;
+            font-weight: 600;
+            color: #222;
+        }
+
+        .modal-close {
+            cursor: pointer;
+            font-size: 22px;
+            color: #888;
+            transition: 0.2s;
+        }
+
+        .modal-close:hover {
+            color: #000;
+        }
+
+        .modal-char-body {
+            display: flex;
+            height: 280px;
+        }
+
+        .char-grid-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 12px;
+            border-right: 1px solid #eee;
+        }
+
+        .char-grid-container::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .char-grid-container::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 4px;
+        }
+
+        .char-grid {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 4px;
+        }
+
+        .char-cell {
+            background: #f8f9fa;
+            padding: 6px 0;
+            text-align: center;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 4px;
+            border: 1px solid transparent;
+            transition: 0.1s;
+        }
+
+        .char-cell:hover {
+            background: #e3f2fd;
+            border-color: var(--primary-blue);
+            transform: scale(1.1);
+        }
+
+        .char-preview-area {
+            width: 110px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 15px;
+        }
+
+        .char-preview-char {
+            font-size: 44px;
+            line-height: 1;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .char-preview-name {
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+        }
+
+        .modal-footer-char {
+            padding: 12px 20px;
+            border-top: 1px solid #eee;
+            display: flex;
+            justify-content: flex-end;
+            background: #fafafa;
+        }
+
+        .modal-btn {
+            padding: 6px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 13px;
+            border: 1px solid #ccc;
+            background: #fff;
+        }
+
+        .modal-btn.primary {
+            background: var(--primary-blue);
+            color: #fff;
+            border-color: var(--primary-blue);
+        }
+
+        .modal-btn:hover {
+            opacity: 0.9;
+        }
+
+        .modal-box {
+            background: #fff;
+            width: 450px;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-body {
+            padding: 20px;
+        }
+
+        .modal-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .modal-row label {
+            width: 90px;
+            font-size: 14px;
+            color: #444;
+        }
+
+        .modal-row input[type="text"] {
+            flex: 1;
+            padding: 6px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .modal-row input[type="text"]:focus {
+            border-color: var(--primary-blue);
+            outline: none;
+        }
+
+        .modal-row input[type="checkbox"] {
+            margin-right: 6px;
+        }
+
+        .modal-footer {
+            padding: 12px 20px;
+            border-top: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fafafa;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="page-scale">
 
-        <!-- ============ NAV ============ -->
-        <header class="site-header">
-            <div class="header-inner">
-                <a href="index.html" class="logo">
-                    <img src="Uzairr2.png" alt="Uzairr">
-                </a>
-
-                <nav class="main-nav" id="mainNav">
-                    <a href="index.html" class="nav-link is-active">Home</a>
-                    <a href="brands.html" class="nav-link">Brands</a>
-                    <a href="fonts.html" class="nav-link">Fonts</a>
-                    <a href="about.html" class="nav-link">About</a>
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </nav>
-
-                <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
-        </header>
-
-        <main>
-
-            <!-- ============ HERO ============ -->
-            <section class="hero">
-                <p class="hero-eyebrow reveal">Brand &amp; Type Design</p>
-
-                <h1 class="hero-title">
-                    <span class="reveal">Identity</span>
-                    <span class="reveal">Through</span>
-                    <span class="reveal">Type</span>
-                </h1>
-
-                <img class="hero-mark" src="Uzairr2.png" alt="" aria-hidden="true">
-            </section>
-
-            <!-- ============ GALLERY (3x3) ============ -->
-            <section class="gallery" id="work">
-                <p class="section-label reveal">Selected Work</p>
-
-                <div class="gallery-grid">
-                    <div class="gallery-item reveal"><img src="assets/place_holder_for_images_temprory.jpeg"
-                            alt="Project 01"></div>
-                    <div class="gallery-item reveal"><img src="assets/place_holder_for_images_temprory.jpeg"
-                            alt="Project 02"></div>
-                    <div class="gallery-item reveal"><img src="assets/place_holder_for_images_temprory.jpeg"
-                            alt="Project 03"></div>
-                    <div class="gallery-item reveal"><img src="assets/place_holder_for_images_temprory.jpeg"
-                            alt="Project 04"></div>
-                    <div class="gallery-item reveal"><img src="assets/place_holder_for_images_temprory.jpeg"
-                            alt="Project 05"></div>
-                    <div class="gallery-item reveal"><img src="assets/place_holder_for_images_temprory.jpeg"
-                            alt="Project 06"></div>
-                    <div class="gallery-item reveal"><img src="assets/place_holder_for_images_temprory.jpeg"
-                            alt="Project 07"></div>
-                    <div class="gallery-item reveal"><img src="assets/place_holder_for_images_temprory.jpeg"
-                            alt="Project 08"></div>
-                    <div class="gallery-item reveal"><img src="assets/place_holder_for_images_temprory.jpeg"
-                            alt="Project 09"></div>
-                </div>
-            </section>
-
-            <!-- ============ TESTIMONIALS (dual marquee) ============ -->
-            <section class="testimonials">
-                <p class="section-label reveal">What Clients Say</p>
-
-                <div class="marquee-container">
-                    <!-- Top row - moving LEFT -->
-                    <div class="marquee-row">
-                        <div class="marquee-track scroll-left" id="marqueeTrack1">
-                            <!-- Set 1 -->
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Exceptional attention to detail on our custom font — the
-                                    final result exceeded expectations.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Second time working together and he still outdid himself
-                                    on
-                                    the font revisions.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Quick, responsive, and genuinely invested in getting the
-                                    details right.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">The custom typeface captured our brand's personality
-                                    exactly
-                                    as we imagined it.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Professional work — nothing else out there
-                                    compares.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-
-                            <!-- Set 2 (duplicate) -->
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Exceptional attention to detail on our custom font — the
-                                    final result exceeded expectations.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Second time working together and he still outdid himself
-                                    on
-                                    the font revisions.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Quick, responsive, and genuinely invested in getting the
-                                    details right.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">The custom typeface captured our brand's personality
-                                    exactly
-                                    as we imagined it.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Professional work — nothing else out there
-                                    compares.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-
-                            <!-- Set 3 (duplicate again for extra safety) -->
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Exceptional attention to detail on our custom font — the
-                                    final result exceeded expectations.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Second time working together and he still outdid himself
-                                    on
-                                    the font revisions.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Quick, responsive, and genuinely invested in getting the
-                                    details right.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">The custom typeface captured our brand's personality
-                                    exactly
-                                    as we imagined it.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Professional work — nothing else out there
-                                    compares.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                        </div>
-                    </div>
-
-                    <!-- Bottom row - moving RIGHT -->
-                    <div class="marquee-row">
-                        <div class="marquee-track scroll-right" id="marqueeTrack2">
-                            <!-- Set 1 -->
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Quick, responsive, and genuinely invested in getting the
-                                    details right.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">The custom typeface captured our brand's personality
-                                    exactly
-                                    as we imagined it.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Professional work — nothing else out there
-                                    compares.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Exceptional attention to detail on our custom font — the
-                                    final result exceeded expectations.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Second time working together and he still outdid himself
-                                    on
-                                    the font revisions.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-
-                            <!-- Set 2 (duplicate) -->
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Quick, responsive, and genuinely invested in getting the
-                                    details right.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">The custom typeface captured our brand's personality
-                                    exactly
-                                    as we imagined it.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Professional work — nothing else out there
-                                    compares.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Exceptional attention to detail on our custom font — the
-                                    final result exceeded expectations.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Second time working together and he still outdid himself
-                                    on
-                                    the font revisions.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-
-                            <!-- Set 3 (duplicate again for extra safety) -->
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Quick, responsive, and genuinely invested in getting the
-                                    details right.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">The custom typeface captured our brand's personality
-                                    exactly
-                                    as we imagined it.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Professional work — nothing else out there
-                                    compares.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Exceptional attention to detail on our custom font — the
-                                    final result exceeded expectations.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                            <span class="testimonial-card">
-                                <span class="testimonial-stars">★★★★★</span>
-                                <span class="testimonial-quote">Second time working together and he still outdid himself
-                                    on
-                                    the font revisions.</span>
-                                <span class="testimonial-name">Fiverr Client</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ============ FOOTER ============ -->
-            <footer class="site-footer">
-                <div class="footer-inner">
-                    <div class="footer-social">
-                        <a href="https://www.fiverr.com/muhammaduzai914" target="_blank" rel="noopener noreferrer"
-                            class="social-link">
-                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
-                                stroke-width="1.6">
-                                <path d="M4 8h11a4 4 0 0 1 4 4v8M4 12h11M4 16h8" />
-                            </svg>
-                            <span>Fiverr</span>
-                        </a>
-                        <a href="https://www.instagram.com/designbyuzairr" target="_blank" rel="noopener noreferrer"
-                            class="social-link">
-                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
-                                stroke-width="1.6">
-                                <rect x="3" y="3" width="18" height="18" rx="5" />
-                                <circle cx="12" cy="12" r="4" />
-                                <circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none" />
-                            </svg>
-                            <span>Instagram</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/uzairr/" target="_blank" rel="noopener noreferrer"
-                            class="social-link">
-                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
-                                stroke-width="1.6">
-                                <rect x="3" y="3" width="18" height="18" rx="3" />
-                                <line x1="7.5" y1="10" x2="7.5" y2="16.5" />
-                                <circle cx="7.5" cy="7" r="0.9" fill="currentColor" stroke="none" />
-                                <path d="M11.5 16.5V10M11.5 12.5c0-1.4 1.1-2.5 2.5-2.5s2.3 1.1 2.3 2.5v4" />
-                            </svg>
-                            <span>LinkedIn</span>
-                        </a>
-                    </div>
-
-                    <p>&#169; 2026 Uzairr</p>
-                </div>
-            </footer>
-
-        </main>
+    <!-- ==================== BRAND HEADER ==================== -->
+    <div class="brand-header">
+        <span class="brand-text">akhnd<span class="brand-accent">.</span>notepad</span>
     </div>
-    <script src="script.js"></script>
-    <script src="js/scale.js"></script>
+
+    <!-- ==================== MENU BAR ==================== -->
+    <div class="menu-bar">
+        <!-- File Menu -->
+        <div class="menu-dropdown">
+            <div class="menu-item">File <i class="fas fa-caret-down" style="font-size: 10px; margin-left: 4px;"></i>
+            </div>
+            <div class="dropdown-content">
+                <div onclick="newFile()">New <span class="shortcut">Ctrl+N</span></div>
+                <div onclick="openFile()">Open... <span class="shortcut">Ctrl+O</span></div>
+                <div onclick="saveFile()">Save (.txt) <span class="shortcut">Ctrl+S</span></div>
+                <hr>
+                <div onclick="saveAsHtml()">Save as .html</div>
+                <div onclick="saveAsPDF()">Save as .pdf</div>
+                <div onclick="saveAsPNG()">Save as screenshot (.png)</div>
+                <hr>
+                <div onclick="printFile()">Print <span class="shortcut">Ctrl+P</span></div>
+            </div>
+        </div>
+
+        <!-- Edit Menu -->
+        <div class="menu-dropdown">
+            <div class="menu-item">Edit <i class="fas fa-caret-down" style="font-size: 10px; margin-left: 4px;"></i>
+            </div>
+            <div class="dropdown-content">
+                <div onclick="execCmd('undo')">Undo <span class="shortcut">Ctrl+Z</span></div>
+                <div onclick="execCmd('redo')">Redo <span class="shortcut">Ctrl+Y</span></div>
+                <hr>
+                <div onclick="execCmd('cut')">Cut <span class="shortcut">Ctrl+X</span></div>
+                <div onclick="execCmd('copy')">Copy <span class="shortcut">Ctrl+C</span></div>
+                <div onclick="execCmd('paste')">Paste <span class="shortcut">Ctrl+V</span></div>
+                <hr>
+                <div onclick="execCmd('selectAll')">Select All <span class="shortcut">Ctrl+A</span></div>
+                <div onclick="openFindReplace()">Find and replace... <span class="shortcut">Ctrl+F</span></div>
+            </div>
+        </div>
+
+        <!-- Insert Menu -->
+        <div class="menu-dropdown">
+            <div class="menu-item">Insert <i class="fas fa-caret-down" style="font-size: 10px; margin-left: 4px;"></i>
+            </div>
+            <div class="dropdown-content">
+                <div class="submenu">
+                    Date/time <i class="fas fa-caret-right" style="font-size: 12px; margin-left: auto;"></i>
+                    <div class="submenu-content">
+                        <div onclick="insertDateTime('short')">Short<br>date</div>
+                        <div onclick="insertDateTime('long')">Long<br>date</div>
+                        <div onclick="insertDateTime('time')">Time</div>
+                    </div>
+                </div>
+                <div onclick="openSpecialChar()"><i class="fas fa-omega"
+                        style="margin-right:10px;font-weight:bold;"></i>Special character</div>
+                <div onclick="insertNBSP()">Nonbreaking space</div>
+            </div>
+        </div>
+
+        <!-- View Menu -->
+        <div class="menu-dropdown">
+            <div class="menu-item">View <i class="fas fa-caret-down" style="font-size: 10px; margin-left: 4px;"></i>
+            </div>
+            <div class="dropdown-content">
+                <div onclick="toggleFullscreen()">Fullscreen <span class="shortcut">F11</span></div>
+            </div>
+        </div>
+
+        <!-- Help Menu -->
+        <div class="menu-dropdown">
+            <div class="menu-item">Help <i class="fas fa-caret-down" style="font-size: 10px; margin-left: 4px;"></i>
+            </div>
+            <div class="dropdown-content">
+                <div
+                    style="font-weight:600; cursor:default; padding:8px 18px; border-bottom:1px solid #f0f0f0; margin-bottom:4px;">
+                    Keyboard Shortcuts</div>
+                <div style="font-size:12px; color:#666; cursor:default; padding:2px 18px; display:block;">Ctrl+Z (Undo)
+                </div>
+                <div style="font-size:12px; color:#666; cursor:default; padding:2px 18px; display:block;">Ctrl+S (Save)
+                </div>
+                <div style="font-size:12px; color:#666; cursor:default; padding:2px 18px; display:block;">Ctrl+F (Find)
+                </div>
+            </div>
+        </div>
+
+        <!-- Theme Toggle -->
+        <button id="themeToggle" onclick="toggleTheme()" title="Toggle Dark/Light Mode"><i
+                class="fas fa-moon"></i></button>
+    </div>
+
+    <!-- ==================== TOOLBAR ==================== -->
+    <div class="toolbar">
+        <div class="tool-group">
+            <button class="tool-btn" title="New (Ctrl+N)" onclick="newFile()"><i class="far fa-file"></i></button>
+            <button class="tool-btn" title="Open (Ctrl+O)" onclick="openFile()"><i
+                    class="fas fa-folder-open"></i></button>
+            <button class="tool-btn" title="Save (Ctrl+S)" onclick="saveFile()"><i class="far fa-save"></i></button>
+            <button class="tool-btn" title="Print (Ctrl+P)" onclick="printFile()"><i class="fas fa-print"></i></button>
+        </div>
+        <div class="tool-group">
+            <button class="tool-btn" title="Cut (Ctrl+X)" onclick="execCmd('cut')"><i class="fas fa-cut"></i></button>
+            <button class="tool-btn" title="Copy (Ctrl+C)" onclick="execCmd('copy')"><i
+                    class="far fa-copy"></i></button>
+            <button class="tool-btn" title="Paste (Ctrl+V)" onclick="execCmd('paste')"><i
+                    class="far fa-clipboard"></i></button>
+        </div>
+        <div class="tool-group">
+            <button class="tool-btn" title="Undo (Ctrl+Z)" onclick="execCmd('undo')"><i
+                    class="fas fa-undo"></i></button>
+            <button class="tool-btn" title="Redo (Ctrl+Y)" onclick="execCmd('redo')"><i
+                    class="fas fa-redo"></i></button>
+        </div>
+        <div class="tool-group">
+            <button class="tool-btn active-btn" title="Find and replace (Ctrl+F)" onclick="openFindReplace()"><i
+                    class="fas fa-binoculars"></i></button>
+        </div>
+        <div class="tool-group">
+            <button class="tool-btn" title="Bold (Ctrl+B)" onclick="execCmd('bold')"><i
+                    class="fas fa-bold"></i></button>
+            <button class="tool-btn" title="Italic (Ctrl+I)" onclick="execCmd('italic')"><i
+                    class="fas fa-italic"></i></button>
+            <button class="tool-btn" title="Underline (Ctrl+U)" onclick="execCmd('underline')"><i
+                    class="fas fa-underline"></i></button>
+            <button class="tool-btn" title="Strikethrough" onclick="execCmd('strikeThrough')"><i
+                    class="fas fa-strikethrough"></i></button>
+
+            <select id="font-family" onchange="execCmd('fontName', this.value)">
+                <option value="Segoe UI">Font Family</option>
+                <option value="Arial">Arial</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Verdana">Verdana</option>
+            </select>
+
+            <select id="font-size" onchange="execCmd('fontSize', this.value)">
+                <option value="3">Font Sizes</option>
+                <option value="1">Tiny</option>
+                <option value="3">Normal</option>
+                <option value="5">Large</option>
+                <option value="7">Huge</option>
+            </select>
+
+            <input type="color" id="colorPicker" value="#000000" title="Text Color"
+                onchange="execCmd('foreColor', this.value)">
+
+            <button class="tool-btn" title="Circle Checklist" onclick="execCmd('insertUnorderedList')"><i
+                    class="fas fa-list-ul"></i></button>
+            <button class="tool-btn" title="Square Checklist"
+                onclick="execCmd('insertUnorderedList'); customizeListStyle()"><i class="fas fa-list"></i></button>
+
+            <button class="tool-btn" title="Upload Custom Font (.ttf)" onclick="uploadCustomFont()"><i
+                    class="fas fa-font"></i></button>
+        </div>
+        <div class="tool-group">
+            <button class="tool-btn" title="Fullscreen (F11)" onclick="toggleFullscreen()"><i
+                    class="fas fa-expand"></i></button>
+        </div>
+    </div>
+
+    <!-- ==================== EDITOR ==================== -->
+    <div id="notepad-area" contenteditable="true"></div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <div class="app-footer">
+        <span>Created by <a href="https://zain.akhnd.com/" target="_blank" rel="noopener">ZainWebStudio</a></span>
+        <span class="footer-sep">|</span>
+        <a href="mailto:zainwebstudio@gmail.com">zainwebstudio@gmail.com</a>
+    </div>
+
+    <!-- ==================== MODALS ==================== -->
+    <div class="modal-overlay" id="findReplaceModal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>Find and replace</h3><span class="modal-close" onclick="closeFindReplace()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-row"><label>Find</label><input type="text" id="findInput"></div>
+                <div class="modal-row"><label>Replace with</label><input type="text" id="replaceInput"></div>
+                <div class="modal-row">
+                    <label></label>
+                    <div>
+                        <div style="display:flex; align-items:center; margin-bottom:4px;"><input type="checkbox"
+                                id="matchCaseCheck"><span>Match case</span></div>
+                        <div style="display:flex; align-items:center;"><input type="checkbox"
+                                id="wholeWordsCheck"><span>Whole words</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div><button class="modal-btn primary" onclick="performFind()">Find</button><button class="modal-btn"
+                        onclick="performReplace()">Replace</button><button class="modal-btn"
+                        onclick="performReplaceAll()">Replace all</button></div>
+                <div><button class="modal-btn" onclick="findPrev()">Prev</button><button class="modal-btn"
+                        onclick="findNext()">Next</button></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="specialCharModal">
+        <div class="modal-box-char">
+            <div class="modal-header">
+                <h3>Special character</h3><span class="modal-close" onclick="closeSpecialChar()">&times;</span>
+            </div>
+            <div class="modal-char-body">
+                <div class="char-grid-container">
+                    <div class="char-grid" id="charGridContainer"></div>
+                </div>
+                <div class="char-preview-area">
+                    <div class="char-preview-char" id="previewChar">&#x3A9;</div>
+                    <div class="char-preview-name" id="previewName">Omega</div>
+                </div>
+            </div>
+            <div class="modal-footer-char"><button class="modal-btn primary" onclick="closeSpecialChar()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script>
+        const editor = document.getElementById('notepad-area');
+        let currentFindIndex = -1; let lastFoundTexts = [];
+
+        function execCmd(command, value = null) { editor.focus(); document.execCommand(command, false, value); }
+
+        // --- HELPER: build filename from the first line/title of the note ---
+        function getFileName(ext) {
+            let firstLine = editor.innerText.trim().split('\n')[0].trim();
+            // Strip characters that aren't valid in filenames
+            firstLine = firstLine.replace(/[\\/:*?"<>|]/g, '').trim().substring(0, 60);
+            if (!firstLine) firstLine = 'my_notepad';
+            return firstLine + '.' + ext;
+        }
+
+        // --- 1. INSERT FUNCTIONS ---
+        function insertDateTime(type) {
+            const now = new Date();
+            let dateString = "";
+            if (type === 'short') dateString = now.toLocaleDateString();
+            else if (type === 'long') dateString = now.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+            else if (type === 'time') dateString = now.toLocaleTimeString();
+            execCmd('insertText', dateString);
+        }
+        function insertNBSP() { execCmd('insertText', '\u00A0'); }
+
+        // --- 2. SPECIAL CHARACTERS ---
+        const specialChars = ['©', '®', '™', '€', '£', '¥', '¢', '§', '¶', '•', '†', '‡', '‰', '±', '÷', '×', '¼', '½', '¾', 'α', 'β', 'γ', 'δ', 'ε', 'ζ', 'η', 'θ', 'ι', 'κ', 'λ', 'μ', 'ν', 'ξ', 'ο', 'π', 'ρ', 'σ', 'τ', 'υ', 'φ', 'χ', 'ψ', 'ω', 'Ω', '∑', '∞', '√', '∫', '∂', '∆', '∇', '≈', '≠', '≡', '≤', '≥', '¬', '∧', '∨', '∩', '∪', '⊂', '⊃', '⊄', '⊆', '⊇', '⊕', '⊗', '⊥', '∠', '°', '′', '″', '…', '—', '–', '‹', '›', '«', '»', '‘', '’', '“', '”', '¡', '¿', '¦', '¨', '¯', '´', '¸', '·', '¹', '²', '³'];
+        function openSpecialChar() { document.getElementById('specialCharModal').style.display = 'flex'; generateGrid(); }
+        function closeSpecialChar() { document.getElementById('specialCharModal').style.display = 'none'; editor.focus(); }
+        function generateGrid() {
+            const grid = document.getElementById('charGridContainer'); grid.innerHTML = '';
+            specialChars.forEach(char => {
+                const cell = document.createElement('div'); cell.className = 'char-cell'; cell.textContent = char;
+                cell.onmouseenter = () => { document.getElementById('previewChar').textContent = char; document.getElementById('previewName').textContent = `Character: ${char}`; };
+                cell.onclick = () => { execCmd('insertText', char); closeSpecialChar(); };
+                grid.appendChild(cell);
+            });
+        }
+
+        // --- 3. FILE OPERATIONS ---
+        function newFile() { if (editor.innerText.trim() !== "" && !confirm("Clear current text?")) return; editor.innerHTML = ""; editor.focus(); }
+
+        // Default save is now plain text (.txt), named after the note's first line
+        function saveFile() {
+            const text = editor.innerText; const blob = new Blob([text], { type: 'text/plain' });
+            const link = document.createElement('a'); link.href = URL.createObjectURL(blob); link.download = getFileName('txt'); link.click(); URL.revokeObjectURL(link.href);
+        }
+        function openFile() {
+            const input = document.createElement('input'); input.type = 'file'; input.accept = '.html,.txt';
+            input.onchange = function (event) {
+                const file = event.target.files[0]; if (!file) return;
+                const reader = new FileReader(); reader.onload = function (e) { if (confirm("Load file (This will replace current text)?")) editor.innerHTML = e.target.result; };
+                reader.readAsText(file);
+            }; input.click();
+        }
+        function printFile() { window.print(); }
+        function toggleFullscreen() { if (!document.fullscreenElement) document.documentElement.requestFullscreen(); else document.exitFullscreen(); }
+
+        // --- 4. OTHER SAVE TYPES ---
+        function saveAsHtml() {
+            const text = editor.innerHTML; const blob = new Blob([text], { type: 'text/html' });
+            const link = document.createElement('a'); link.href = URL.createObjectURL(blob); link.download = getFileName('html'); link.click(); URL.revokeObjectURL(link.href);
+        }
+        function saveAsPDF() {
+            const { jsPDF } = window.jspdf;
+            const pdf = new jsPDF();
+            const text = editor.innerText;
+            const lines = pdf.splitTextToSize(text, 180); // Adjusts text to fit page width
+            pdf.text(lines, 10, 10);
+            pdf.save(getFileName('pdf'));
+        }
+        function saveAsPNG() {
+            html2canvas(editor, { scale: 2 }).then(canvas => {
+                const link = document.createElement('a');
+                link.download = getFileName('png');
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+            });
+        }
+
+        // --- 5. NEW CHECKLISTS & FONTS ---
+        function customizeListStyle() {
+            // Wait a tiny bit for execCmd to create the list, then change it to square
+            setTimeout(() => {
+                let lists = editor.querySelectorAll('ul');
+                if (lists.length > 0) {
+                    let lastList = lists[lists.length - 1];
+                    lastList.style.listStyleType = "square"; // Changes Circle to Square
+                }
+            }, 10);
+        }
+
+        function uploadCustomFont() {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = '.ttf,.woff,.woff2';
+            input.onchange = function (e) {
+                const file = e.target.files[0];
+                if (!file) return;
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const fontData = e.target.result;
+                    const fontName = file.name.replace(/\.[^/.]+$/, ""); // Remove file extension
+
+                    // Inject font into styles
+                    const style = document.createElement('style');
+                    style.innerHTML = `
+                        @font-face {
+                            font-family: '${fontName}';
+                            src: url('${fontData}');
+                        }
+                    `;
+                    document.head.appendChild(style);
+
+                    // Add to dropdown and apply immediately
+                    const fontSelect = document.getElementById('font-family');
+                    const option = document.createElement('option');
+                    option.value = fontName;
+                    option.text = fontName + " (Custom)";
+                    fontSelect.appendChild(option);
+                    fontSelect.value = fontName;
+
+                    execCmd('fontName', fontName);
+                    alert(`Custom font "${fontName}" loaded successfully!`);
+                };
+                reader.readAsDataURL(file);
+            };
+            input.click();
+        }
+
+        // --- 6. DARK / LIGHT MODE TOGGLE ---
+        function toggleTheme() {
+            const body = document.body;
+            const themeBtn = document.getElementById('themeToggle');
+            body.classList.toggle('dark-mode');
+
+            if (body.classList.contains('dark-mode')) {
+                themeBtn.innerHTML = '<i class="fas fa-sun"></i>';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeBtn.innerHTML = '<i class="fas fa-moon"></i>';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // Check saved theme on load
+        if (localStorage.getItem('theme') === 'dark') {
+            toggleTheme();
+        }
+
+        // --- 7. FIND & REPLACE ---
+        function openFindReplace() { document.getElementById('findReplaceModal').style.display = 'flex'; document.getElementById('findInput').focus(); clearHighlights(); }
+        function closeFindReplace() { document.getElementById('findReplaceModal').style.display = 'none'; clearHighlights(); editor.focus(); }
+        function clearHighlights() { editor.innerHTML = editor.innerHTML.replace(/<span class="find-highlight" style="background-color: yellow;">/g, ''); editor.innerHTML = editor.innerHTML.replace(/<\/span>/g, ''); currentFindIndex = -1; lastFoundTexts = []; }
+
+        function performFind() {
+            clearHighlights(); let searchText = document.getElementById('findInput').value;
+            if (!searchText) return alert("Please enter text to find.");
+            let matchCase = document.getElementById('matchCaseCheck').checked;
+            let wholeWords = document.getElementById('wholeWordsCheck').checked;
+            let textNodes = []; let walker = document.createTreeWalker(editor, NodeFilter.SHOW_TEXT, null, false);
+            let node; while (node = walker.nextNode()) textNodes.push(node);
+            let foundPositions = [];
+            textNodes.forEach(node => {
+                let text = node.textContent; let searchStr = matchCase ? searchText : searchText.toLowerCase();
+                let compareStr = matchCase ? text : text.toLowerCase(); let index = compareStr.indexOf(searchStr);
+                while (index !== -1) {
+                    if (wholeWords) { let leftBound = index === 0 || !/[\w]/.test(text[index - 1]); let rightBound = index + searchStr.length === text.length || !/[\w]/.test(text[index + searchStr.length]); if (!leftBound || !rightBound) { index = compareStr.indexOf(searchStr, index + 1); continue; } }
+                    foundPositions.push({ node: node, start: index, end: index + searchStr.length }); index = compareStr.indexOf(searchStr, index + 1);
+                }
+            });
+            if (foundPositions.length === 0) return alert("Text not found.");
+            lastFoundTexts = foundPositions; currentFindIndex = 0; highlightCurrent();
+        }
+        function highlightCurrent() {
+            if (currentFindIndex < 0 || currentFindIndex >= lastFoundTexts.length) return;
+            let pos = lastFoundTexts[currentFindIndex]; let textNode = pos.node; let parent = textNode.parentNode;
+            let before = textNode.splitText(pos.start); let highlightedText = before.splitText(pos.end - pos.start);
+            let span = document.createElement('span'); span.className = 'find-highlight'; span.style.backgroundColor = 'yellow'; span.textContent = before.textContent;
+            parent.insertBefore(span, highlightedText); parent.removeChild(before); span.scrollIntoView({ block: 'center' });
+        }
+        function findNext() { if (lastFoundTexts.length === 0) return performFind(); clearHighlights(); currentFindIndex = (currentFindIndex + 1) % lastFoundTexts.length; highlightCurrent(); }
+        function findPrev() { if (lastFoundTexts.length === 0) return performFind(); clearHighlights(); currentFindIndex = (currentFindIndex - 1 + lastFoundTexts.length) % lastFoundTexts.length; highlightCurrent(); }
+        function performReplace() {
+            if (lastFoundTexts.length === 0) return performFind();
+            let replaceText = document.getElementById('replaceInput').value; let highlighted = document.querySelector('.find-highlight');
+            if (highlighted) { highlighted.textContent = replaceText; let parent = highlighted.parentNode; while (highlighted.firstChild) { parent.insertBefore(highlighted.firstChild, highlighted); } parent.removeChild(highlighted); lastFoundTexts.splice(currentFindIndex, 1); if (lastFoundTexts.length === 0) return; if (currentFindIndex >= lastFoundTexts.length) currentFindIndex = 0; highlightCurrent(); }
+        }
+        function performReplaceAll() {
+            if (lastFoundTexts.length === 0) return performFind(); let replaceText = document.getElementById('replaceInput').value;
+            let pos = document.querySelectorAll('.find-highlight'); pos.forEach(el => { el.textContent = replaceText; let parent = el.parentNode; while (el.firstChild) { parent.insertBefore(el.firstChild, el); } parent.removeChild(el); });
+            lastFoundTexts = []; currentFindIndex = -1; editor.normalize(); alert("All occurrences replaced.");
+        }
+
+        // --- 8. GLOBAL SHORTCUTS ---
+        document.addEventListener('keydown', function (e) {
+            if (e.ctrlKey && e.key === 's') { e.preventDefault(); saveFile(); }
+            if (e.ctrlKey && e.key === 'o') { e.preventDefault(); openFile(); }
+            if (e.ctrlKey && e.key === 'n') { e.preventDefault(); newFile(); }
+            if (e.ctrlKey && e.key === 'p') { e.preventDefault(); printFile(); }
+            if (e.ctrlKey && e.key === 'f') { e.preventDefault(); openFindReplace(); }
+            if (e.key === 'F11') { e.preventDefault(); toggleFullscreen(); }
+        });
+    </script>
 </body>
 
 </html>
